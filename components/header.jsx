@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const nav = [{name: 'about'}, {name: 'special'}]
 
@@ -9,7 +9,8 @@ const Header = () => {
       <h1>
         <Link href="/">
           <a>
-            <Image src="/img_logo.svg" alt='SAMPLE' width={136} height={25}></Image>
+            {/* <Image src="/img_logo.svg" alt='SAMPLE' width={136} height={25}></Image> */}
+            <img src="/img_logo.svg" alt="SAMPLE" />
           </a>
         </Link>
       </h1>

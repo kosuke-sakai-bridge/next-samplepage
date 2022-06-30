@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Category = (props) => {
   return (
@@ -8,7 +8,8 @@ const Category = (props) => {
         <Link href={props.link}>
           <a>
             <figure>
-              <Image src={props.src} alt={props.alt} width={259} height={259}></Image>
+              {/* <Image src={props.src} alt={props.alt} width={259} height={259}></Image> */}
+              <img src={props.src} alt={props.alt} />
             </figure>
             <span>{props.category}</span>
           </a>

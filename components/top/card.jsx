@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 const Card = (props) => {
   return (
@@ -11,7 +11,8 @@ const Card = (props) => {
               <h4 data-subtitle={props.subtitle}>{props.title}</h4>
               <p>{props.text}</p>
             </div>
-            <Image src={props.src} alt={props.alt} width={200} height={200}></Image>
+            {/* <Image src={props.src} alt={props.alt} width={200} height={200}></Image> */}
+            <img src={props.src} alt={props.alt} />
           </div>
         </a>
       </Link>
